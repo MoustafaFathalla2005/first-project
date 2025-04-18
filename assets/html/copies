@@ -1,0 +1,215 @@
+/* <div class="head1">
+                
+    <img  style="border-radius: 20px;width:300px; height: 300px; margin-right: 20px;" src="C:\Users\Alsayad Electronics\OneDrive\Desktop\secure\code spark\Final Project\assets\images\images\profile.jpg" >
+    <div class="part2">
+        <button>Offline</button>
+        <h3>Alan Smithee</h3>
+        <p>you Havent Gone live yet. Go live By Touching<br> The Button Below.</p>
+        <button>Start Live Stream</button>
+    </div>
+    <div class="part3">
+       <P>Games Downloaded<span class ='s-space' style="margin-left: 100px; " >3</span></P>
+       <hr color="#3c3c3c" style="color: #3c3c3c;background-color: #3c3c3c;">
+       <P>Freiend Online<span class ='s-space' style="margin-left: 135px; ">16</span></P>
+       <hr color="#3c3c3c" style="color: #3c3c3c;background-color: #3c3c3c;">
+       <P>Live Streames<span class ='s-space' style="margin-left:120px; ">None</span></P>
+       <hr color="#3c3c3c" style="color: #3c3c3c;background-color: #3c3c3c;">
+       <P>Clips<span class ='s-space' style="margin-left: 220px;">29</span></P>
+       
+    </div>
+    <div class="head2">
+        <h2>Your Most Popular<span> Clips</span> </h2>
+        <div class="part2">
+            <div class="image">
+                <div class="div_img1" ><i class="fa-sharp-duotone fa-solid fa-circle-play"></i></div>
+                <h4>First Clip<span style="margin-left: 45px;"><i class="fa-solid fa-eye"></i>250</span></h4>
+            </div>
+            <div class="image">
+                <div class="div_img2" ><i class="fa-sharp-duotone fa-solid fa-circle-play"></i></div>
+                <h4>Second Clip<span style="margin-left: 35px;"><i class="fa-solid fa-eye"></i>183</span></h4>
+            </div>
+            <div class="image">
+                <div class="div_img3" ><i class="fa-sharp-duotone fa-solid fa-circle-play"></i></div>
+                <h4>Third Clip<span style="margin-left: 42px;"><i class="fa-solid fa-eye"></i>141</span></h4>
+            </div>
+            <div class="image">
+                <div class="div_img4" ><i class="fa-sharp-duotone fa-solid fa-circle-play"></i></div>
+                <h4>Fourth Clip<span style="margin-left: 40px;"><i class="fa-solid fa-eye"></i>91</span></h4>
+            </div>
+        </div>
+        <button>Load More Clips</button>
+
+    </div>
+    hr{
+        background-color: #3c3c3c;
+        color:  #3c3c3c ;
+        margin-bottom: 10px;
+    
+    }
+    .div1{
+        width: 90%;
+        height: 70%;
+        background-color: var(--DarkGray);
+        margin: 10px;
+        padding:15px;
+        border-radius: var(--border-radiues-divs);
+        
+    }
+    .div1 .head .head1{
+        display: flex;
+        margin-bottom: 20px;
+    
+    }
+    
+    .div2{
+        width: 90%;
+        height: 20%;
+        background-color: var(--DarkGray);
+        margin:10px;
+        margin-top:50px;
+        padding:15px;
+        border-radius: var(--border-radiues-divs);
+    
+    
+    }
+    .head1 .part2{
+        margin-right: 40px;
+        align-content: center;
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 30px;
+    }
+    .part2 button{
+        
+        margin:10px 0px 5px 370px; 
+        padding: 7px 10px;
+        background-color: var(--Pinkcolor);
+        color: white;
+        border-radius: 20px;
+        border: none;
+        margin-bottom: 10px;
+    
+    }
+    .part3{
+        width: 350px;
+        background-color: var(--LightGray);
+        margin:10px;
+        margin-top:30px;
+        margin-bottom: 30px;
+        padding:30px;
+        padding-bottom: 0px;
+        font-size: 20px;
+        border-radius: var(--border-radiues-divs);
+    
+    }
+    .part3 .s-space{
+        color: var(--Pinkcolor);
+    }
+    
+    /* githup */
+    /* .part3 .s-space:hover{
+        color: var(--DarkGray);
+        background-color: var(--Pinkcolor);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .part3 .s-space:hover .s-space1{
+        color: var(--DarkGray);
+        background-color: var(--Pinkcolor);
+        transition: 0.5s;
+        cursor: pointer;
+        } */
+    
+        .head2{
+            width: 90%;
+            height: 20%;
+            background-color: var(--DarkGray);
+            margin:10px;
+            margin-top:50px;
+            padding:15px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .head2 .part2{
+            
+            width:300px ;
+            height: 220px;
+            display: flex;
+            /* justify-content: space-between; */
+            margin-bottom: 20px;
+            margin-left: 30px;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            /* padding: 10px; */
+            gap: 30px;
+        }
+        .image{
+            /* width:300px ; */
+            height: 230px;
+            background-color: var(--LightGray);
+            padding:10px;
+            border-radius: var(--border-radiues-divs);
+        }
+    
+        .image .div_img1{
+        background-image: url('C:/Users/Alsayad Electronics/OneDrive/Desktop/secure/code spark/Final Project/assets/images/images/clip-01.jpg');
+        background-size: cover;
+        object-fit: cover;
+        width: 200px;
+        height: 78%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px 0px 0px 0px;
+        border-radius: var(--border-radiues-divs);
+    
+    }
+    
+    .image .div_img2{
+        background-image: url('C:/Users/Alsayad Electronics/OneDrive/Desktop/secure/code spark/Final Project/assets/images/images/clip-02.jpg');
+        background-size: cover;
+        object-fit: cover;
+        width: 200px;
+        height: 78%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px 0px 0px 0px;
+        border-radius: var(--border-radiues-divs);
+    
+    }
+    .image .div_img3{
+        background-image: url('C:/Users/Alsayad Electronics/OneDrive/Desktop/secure/code spark/Final Project/assets/images/images/clip-03.jpg');
+        background-size: cover;
+        object-fit: cover;
+        width: 200px;
+        height: 78%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px 0px 0px 0px;
+        border-radius: var(--border-radiues-divs);
+    
+    }
+    .image .div_img4{
+        background-image: url('C:/Users/Alsayad Electronics/OneDrive/Desktop/secure/code spark/Final Project/assets/images/images/clip-04.jpg');
+        background-size: cover;
+        object-fit: cover;
+        width: 200px;
+        height: 78%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:10px 0px 0px 0px;
+        border-radius: var(--border-radiues-divs);
+    
+    }
+    .head2 button{
+        margin:10px 0px 5px 440px;
+        padding: 10px 30px;
+        background-color: var(--Pinkcolor);
+        color: white;
+        border-radius: 20px;
+        border: none;
+    }

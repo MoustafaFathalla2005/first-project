@@ -1,0 +1,445 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --DarkGray:#191919;
+    --LightGray:#282828;
+    --lightWrites:#3c3c3c;
+    --Pinkcolor:#E15C88;
+    --mainFont:"Gravitas One", serif;
+    --secondFont:"Josefin Slab", serif;
+    --border-radiues-divs:10px;
+    --border-radiues-buttons:20px;
+} 
+
+
+.mainContainer{
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding:3vh 7% 1vh;
+}
+/* start header  */
+ .mainContainer .header {
+     width : 100%;
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 20px;
+     
+    }
+    .mainContainer .header .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainContainer .header .logo img {
+        width: 90%;
+    }
+    .mainContainer .header .hline{
+        width: 1px;
+/* height: ; */
+        background-color: var(--LightGray);
+    }
+    .mainContainer .header .search {
+        height: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color:var(--LightGray) ;
+        border-radius: 30px;
+        margin-right: 25px;
+        margin-top: 10px;
+        /* padding: 12px 20px; */
+    }
+    .mainContainer .header .search input {
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: var(--Pinkcolor);
+        font-size: 17px;
+        padding: 12px 20px;
+        outline: none;
+        color: #656363;
+    }
+    .mainContainer .header .search i {
+        background-color: transparent;
+        color: #656363;
+        
+    }
+    .mainContainer .header ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .mainContainer .header ul li a{
+        color: #4a4848;
+        text-decoration:none;
+        text-transform: capitalize;
+        font-family: var(--secondFont);
+        font-size: 18px; 
+        font-weight: bold;
+        transition: 1s;
+    }
+    .mainContainer .header ul li a:hover,
+    .mainContainer .header ul  .active a{
+        color: var(--Pinkcolor);
+        transition: 0.5s;
+    }
+    
+    .mainContainer .header ul .profile{
+        display: flex;
+        align-items: center;
+        gap:18px;
+        background-color: var(--LightGray);
+        border-radius: 30px;
+        padding: 5px 20px;
+        transition: 1s;
+    }
+    .mainContainer .header ul  .profile:hover{
+        background-color: var(--Pinkcolor);
+    
+    }
+    .mainContainer .header ul .profile:hover a{
+        color: white;
+    }
+    .mainContainer .header ul .profile img{
+        
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+/* end header  */
+/* start content  */
+.content{
+    width: 100%;
+    background-color: var(--DarkGray);
+    /* margin: 10px; */
+    /* padding:15px; */
+    border-radius: var(--border-radiues-divs);
+    
+}
+.mainContainer .content{
+    width: 100%;
+    padding:5vh 5%;
+    background-color: var(--LightGray);
+    border-radius: 30px;
+   
+    
+}
+/* start parts*/
+.mainContainer .content .parts{
+width: 100%;
+background-color: var(--DarkGray);
+background-size: 100% 100%;
+padding: 7vh 5%;
+border-radius: 30px;
+color:white
+}
+
+
+
+    .mainContainer .content .parts .part1 {
+    width: 100%;
+    height: 50%;
+    
+    display: flex;
+    border-radius: 20px;
+    
+}
+.mainContainer .content .parts .part1 img{
+    width: 25%;
+    height: 25%;
+    border-radius: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.mainContainer .content .parts .part1 .status-states{
+    display: flex;
+}
+
+
+
+
+.mainContainer .content .part1 .status-stats .status{
+    width: 50%;
+    /* margin-right: 40px; */
+    align-content: center;
+    padding: 20px;
+    padding-left: 5px;
+    padding-right: 30px;
+    margin-right: 30px;
+}
+.mainContainer .content .parts .part1 .status-states h2{
+    font-family: var(--mainFont);
+    font-size: 17px;
+    color: white;
+    margin-bottom: 10px;
+}
+.mainContainer .content .parts .part1 .status-states p{
+    font-family: var(--secondFont);
+    font-size: 17px;
+    color: rgb(130, 127, 127);
+    margin-bottom: 10px;
+}
+.mainContainer .content .parts .part1 .status-states .states{
+    background-color: var(--LightGray);
+    width:70%;
+    padding: 20px;
+    margin-left: 150px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+    font-family: var(--secondFont);   
+    
+}
+.mainContainer .content .parts .part1 .status-states .states p{
+    color: #989696;
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin: 20px auto; 
+    
+}
+.mainContainer .content .parts .part1 .status-states .states .a span{
+    /* color: var(--Pinkcolor); */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 125px; 
+}
+.mainContainer .content .parts .part1 .status-states .states .b span{
+    /* color: var(--Pinkcolor); */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 170px; 
+}
+.mainContainer .content .parts .part1 .status-states .states .c span{
+    /* color: var(--Pinkcolor); */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 160px; 
+}
+.mainContainer .content .parts .part1 .status-states .states .d span{
+    /* color: var(--Pinkcolor); */
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 235px; 
+}
+
+.mainContainer .content .parts .part1 .status-states .status .button {
+    background-color: transparent;
+    border:var(--Pinkcolor) 1px solid;
+    color: var(--Pinkcolor);
+    border-radius: 30px;
+    margin: 20px 0px;
+    padding: 7px 10px;
+    transition: 0.5s;
+}
+
+ 
+ .mainContainer .content .parts .part1 .status-states .status .btn{ 
+    padding: 7px 10px;
+    background-color: var(--Pinkcolor);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0px;
+}
+.mainContainer .content .parts .part2{
+    width: 100%;
+    /* display: flex; */
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    justify-content: space-between;
+   
+}
+.mainContainer .content .parts .part2 h2{
+    color: white;
+    font-family: var(--mainFont);
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.mainContainer .content .parts .part2 h2 span{
+    color: var(--Pinkcolor);
+    text-decoration: underline;
+}
+.mainContainer .content .part2 .clips{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+    /* padding: 20px 0px; */
+    gap: 10px;
+}
+.mainContainer .content .part2 .clips .clip{
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+    background-color: var(--LightGray);
+    padding: 20px;
+    border-radius: 20px;
+}
+.mainContainer .content .part2 .clips .clip img{
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+    /* margin-right: 20px; */
+    transition: 0.5s;
+}
+.mainContainer .content .part2 .clips .clip .info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 20%; */
+    border-radius: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
+}
+.mainContainer .content .part2 button{
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-right: 20px;
+    transition: 0.5s;
+    background-color: var(--Pinkcolor);
+    color: white;
+    transition: 0.5s;
+}
+.mainContainer .content .part2 button:hover{
+    background-color: white;
+    color: var(--Pinkcolor);
+    transition: 0.5s;
+}
+
+
+
+/* start Library div*/
+.mainContainer .content .Library{
+    background-color: var(--DarkGray);
+    width: 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+.mainContainer .content .Library .gaming{
+    width: 100%;
+    /* margin-top: 30px; */
+
+}
+.mainContainer .content .Library .gaming .game{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+    gap:10px;
+    
+}
+.mainContainer .content .Library h2{
+    color: var(--Pinkcolor);
+    font-family: var(--mainFont);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.mainContainer .content .Library h2 span{
+    color: white;
+    text-decoration: underline;
+}
+.mainContainer .content .Library .gaming .game img{
+    border-radius: 20px;
+}
+.mainContainer .content .Library .gaming .game h3{
+    color: white;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    /* font-size: 25px; */
+}
+.mainContainer .content .Library button{
+    font-family: var(--secondFont);
+    background-color: var(--Pinkcolor);
+    color: white;
+    border-radius:20px ;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 1s;
+    }
+    
+    .mainContainer .content .Library button:hover{
+    background-color: white;
+    color: var(--Pinkcolor);
+    
+    }
+.mainContainer .content .Library .gaming .game p{
+    color: #666;
+    font-family: var(--secondFont);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.mainContainer .content .Library .gaming .game button{
+    background-color:transparent;
+    border: 1px solid #666;
+    color:#666;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--secondFont);
+    padding: 8px 20px;
+}
+.mainContainer .content .Library .gaming .game button:hover{
+    color: var(--Pinkcolor);
+    border-color: var(--Pinkcolor);
+}
+.mainContainer .content .Library img:hover{
+    transform: rotate(5deg) scale(1.2);
+    overflow: hidden;
+    
+}
+.mainContainer .content .Library .img{
+    width:100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+/* end Library div*/
+/* end content  */
+
+
+
+/* start footer */
+.mainContainer .footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: var(--secondFont);
+    font-size: 22px;
+    margin: 50px 0px 20px;
+}
+.mainContainer .footer a{
+ text-decoration: none;
+ color: white;
+    font-family: var(--secondFont);
+}
+
+.mainContainer .footer a:hover{
+   color: var(--Pinkcolor);
+    font-family: var(--mainFont);
+}
+
+/* end footer */
+

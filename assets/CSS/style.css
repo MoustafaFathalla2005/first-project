@@ -1,0 +1,430 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    --DarkGray:#191919;
+    --LightGray:#282828;
+    --lightWrites:#3c3c3c;
+    --Pinkcolor:#EC6090;
+    --mainFont:"Gravitas One", serif;
+    --secondFont:"Josefin Slab", serif;
+    --border-radiues-divs:10px;
+    --border-radiues-buttons:20px;
+} 
+
+
+.mainContainer{
+    width: 100%;
+    background-color: var(--DarkGray);
+    padding:3vh 7% 1vh;
+}
+/* start header  */
+ .mainContainer .header {
+     width : 100%;
+     display: flex;
+     justify-content: space-between;
+     
+    }
+    .mainContainer .header .logo {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainContainer .header .logo img {
+        width: 90%;
+    }
+    .mainContainer .header .hline{
+        width: 1px;
+/* height: ; */
+        background-color: var(--LightGray);
+    }
+    .mainContainer .header .search {
+        height: 20%;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color:var(--LightGray) ;
+        border-radius: 30px;
+        margin-right: 25px;
+        margin-top: 10px;
+        /* padding: 12px 20px; */
+    }
+    .mainContainer .header .search input {
+        width: 70%;
+        background-color: transparent;
+        border: none;
+        color: var(--Pinkcolor);
+        font-size: 17px;
+        padding: 12px 20px;
+        outline: none;
+        color: #656363;
+    }
+    .mainContainer .header .search i {
+        background-color: transparent;
+        color: #656363;
+        
+    }
+    .mainContainer .header ul{
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .mainContainer .header ul li a{
+        color: #4a4848;
+        text-decoration:none;
+        text-transform: capitalize;
+        font-family: var(--secondFont);
+        font-size: 18px; 
+        font-weight: bold;
+        transition: 1s;
+    }
+    .mainContainer .header ul li a:hover,
+    .mainContainer .header ul  .active a{
+        color: var(--Pinkcolor);
+        transition: 0.5s;
+    }
+    
+    .mainContainer .header ul .profile{
+        display: flex;
+        align-items: center;
+        gap:18px;
+        background-color: var(--LightGray);
+        border-radius: 30px;
+        padding: 5px 20px;
+        transition: 1s;
+    }
+    .mainContainer .header ul  .profile:hover{
+        background-color: var(--Pinkcolor);
+    
+    }
+    .mainContainer .header ul .profile:hover a{
+        color: white;
+    }
+    .mainContainer .header ul .profile img{
+        
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+ /* end header  */
+  
+  
+/* start content  */
+    .mainContainer .content{
+        width: 100%;
+        padding:5vh 5%;
+        background-color: var(--LightGray);
+        border-radius: 30px;
+        margin-top: 50px;
+        
+    }
+/* start banner */
+.mainContainer .content .banner{
+    width: 100%;
+    background-image: url(../images/images/banner-bg.jpg);
+    background-size: 100% 100%;
+    padding: 7vh 5%;
+    border-radius: 30px;
+    color:white
+}
+.mainContainer .content .banner h1{
+    font-family: var(--mainFont);
+    font-size: 35px;
+    font-weight: bold;
+    margin: 35px 0px ;
+}
+.mainContainer .content .banner h1 span{
+    color: var(--Pinkcolor);
+    
+}
+.mainContainer .content .banner h3{
+    font-family: var(--secondFont);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.mainContainer .content .banner button,
+.mainContainer .content .Popular button,
+.mainContainer .content .Library button{
+    font-family: var(--secondFont);
+    background-color: var(--Pinkcolor);
+    color: white;
+    border-radius:20px ;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 1s;
+}
+.mainContainer .content .banner button:hover,
+.mainContainer .content .Popular button:hover,
+.mainContainer .content .Library button:hover{
+    background-color: white;
+    color: var(--Pinkcolor);
+    
+}
+/* end banner */
+
+/* start popular..cards */
+.mainContainer .content .Popular{
+    width: 100%;
+    padding: 5vh 5%;
+    background-color: var(--DarkGray);
+    margin-top:50px ;
+    border-radius: 50px;
+    text-align: center;
+}
+.mainContainer .content .Popular h2,
+.mainContainer .content .Library h2{
+    color: var(--Pinkcolor);
+    font-family: var(--mainFont);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.mainContainer .content .Popular h2 span,
+.mainContainer .content .Library h2 span{
+    color: white;
+    text-decoration: underline;
+}
+.mainContainer .content .Popular .cards{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    row-gap:15px ;
+}
+.mainContainer .content .Popular .cards .card{
+    width: 22%;
+    background-color: var(--LightGray);
+    padding: 0px 0px 20px 0px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+}
+.mainContainer .content .Popular .cards .card img{
+    width: 100%;
+    border-radius: 20px;
+    border-bottom-left-radius:0px ;
+    border-bottom-right-radius:0px ;
+}
+.mainContainer .content .Popular .cards .card .data{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  color: #8b8989;
+  font-family: var(--secondFont);
+  font-size: 16px;
+  gap: 10px;
+}
+.mainContainer .content .Popular .cards .card .data h3{
+    font-family: var(--mainFont);
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+.mainContainer .content .Popular .cards .card .data  .fa-star{
+    color:yellow;
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+}
+.mainContainer .content .Popular .cards .card .data  .fa-download{
+    color:var(--Pinkcolor);
+    /* font-size: 20px; */
+    /* font-weight: bold; */
+}
+.mainContainer .content .Popular .cards .card img:hover{
+    transform: rotate(5deg) scale(1.2);
+    overflow: hidden;
+    
+}
+.mainContainer .content .Popular .cards .card .img{
+    width:100%;
+    overflow: hidden;
+    border-radius: 20px;
+    
+}
+
+
+/* end popular..cards */
+/* start Library div*/
+.mainContainer .content .Library{
+    background-color: var(--DarkGray);
+    width: 100%;
+    padding: 5vh 5%;
+    border-radius: 30px;
+    margin-top: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+.mainContainer .content .Library .gaming{
+    width: 100%;
+    /* margin-top: 30px; */
+
+}
+.mainContainer .content .Library .gaming .game{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+    gap:10px;
+
+}
+.mainContainer .content .Library .gaming .game img{
+    border-radius: 20px;
+}
+.mainContainer .content .Library .gaming .game h3{
+    color: white;
+    font-family: var(--mainFont);
+    text-transform: capitalize;
+    /* font-size: 25px; */
+}
+.mainContainer .content .Library .gaming .game p{
+    color: #666;
+    font-family: var(--secondFont);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+}
+.mainContainer .content .Library .gaming .game button{
+    background-color:transparent;
+    border: 1px solid #666;
+    color:#666;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: var(--secondFont);
+    padding: 8px 20px;
+}
+.mainContainer .content .Library .gaming .game button:hover{
+    color: var(--Pinkcolor);
+    border-color: var(--Pinkcolor);
+}
+.mainContainer .content .Library img:hover{
+    transform: rotate(5deg) scale(1.2);
+    overflow: hidden;
+    
+}
+.mainContainer .content .Library .img{
+    width:100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* end Library div*/
+/* end content  */
+
+
+/* start footer */
+.mainContainer .footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: var(--secondFont);
+    font-size: 22px;
+    margin: 50px 0px 20px;
+}
+.mainContainer .footer a{
+    text-decoration: none;
+    color: white;
+       font-family: var(--secondFont);
+   }
+   
+   .mainContainer .footer a:hover{
+      color: var(--Pinkcolor);
+       font-family: var(--mainFont);
+   }
+/* end footer */
+
+@media (max-width: 1000px) {
+    .mainContainer .header{
+        flex-wrap: wrap;
+
+    }
+    .mainContainer .header .logo{
+        width:20%;
+    }
+    .mainContainer .header .search{
+        width:50%;
+    }
+    .mainContainer .header ul{
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .mainContainer .content .banner h1{
+        font-size: 25px;
+    }
+    .mainContainer .content .Popular h2{
+        font-size: 25px;
+    }
+    .mainContainer .content .Popular .cards .card .data h3{
+        font-size: 15px;
+    }
+    /* .mainContainer .content .Popular .cards .card .data p{
+        font-size: 15px;
+    } */
+    .mainContainer .content .Library h2{
+        font-size: 25px;
+    }
+    .mainContainer .content .Library .gaming .game h3{
+        font-size: 15px;
+    }
+    .mainContainer .content .Library .gaming .game p{
+        font-size: 15px;
+    }
+    .mainContainer .content .Popular .cards .card {
+        width: 45%;
+    }
+    /* .mainContainer .content .Library .gaming .game{
+       grid-template-columns:repeat(3,1fr); 
+       column-gap: 10px;
+       row-gap: 10px;
+    } */
+    /* .mainContainer .content .Library .gaming .game .data p,
+    .mainContainer .content .Library .gaming .game .data {
+        text-align:left ;
+    } */
+}
+@media (max-width: 700px) {
+  .mainContainer .content .banner h1{
+    font-size: 20px;
+  }
+  .mainContainer .content .banner button{
+    font-size: 16px;
+  }
+   .mainContainer .content .Library .gaming .game{
+       grid-template-columns:repeat(2,1fr); 
+       column-gap: 10px;
+       row-gap: 10px;
+    }
+     .mainContainer .content .Library .gaming .game .data p,
+    .mainContainer .content .Library .gaming .game .data {
+        text-align:left ;
+    }
+    .mainContainer .header .hline {
+        display: none;
+    }
+    .mainContainer .header .search{
+        /* display: none; */
+        order:4;
+        width:90%;
+        margin:auto;
+    }
+    .mainContainer  .header ul{
+        background-color: white;
+        flex-direction:column ;
+        gap: 10px;
+    }
+
+}

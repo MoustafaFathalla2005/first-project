@@ -1,0 +1,489 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --mainFont:"Gravitas One", serif;
+    --SecondFont:"Josefin Slab", serif;
+    --darkGray:#191919;
+    --lightGray: #282828;
+    --PinkColor: #E15C88;
+    --secondColor: #4C575D;
+    --ColorRating: #FFFF00;
+}
+
+a,
+button {
+    all: unset;
+    cursor: pointer;
+    transition: 0.9s;
+    text-transform: capitalize;
+    font-family: var(--SecondFont);
+}
+
+.main-container {
+    width: 100%;
+    background-color: var(--darkGray);
+    padding: 3vh 7% 1vh;
+}
+
+.main-container nav {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container nav,
+.main-container nav .search,
+.main-container nav ul li:last-child {
+    display: flex;
+}
+
+.main-container nav,
+.main-container nav .logo img {
+    width: 100%;
+}
+
+.main-container nav .logo {
+    width: 12%;
+}
+
+.main-container nav .h-line {
+    width: 0.1%;
+    margin:0 20px;
+    height: 7vh;
+    border-radius: 30px;
+}
+
+.main-container nav .h-line,
+.main-container nav .search {
+    background-color: var(--lightGray);
+}
+
+.main-container nav .search {
+    align-items: center;
+    width: 20%;
+    gap: 5px;
+    padding: 15px;
+    border-radius: 30px;
+    height: 4vh;
+}
+
+.main-container nav .search,
+.main-container nav .search input,
+.main-container nav ul li a {
+    color: var(--secondColor);
+    font-size: 18px;
+    font-family: var(--SecondFont);
+}
+
+.main-container nav .search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 95%;
+}
+
+.main-container nav ul {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.main-container nav ul li:hover a {
+    color: var(--PinkColor);
+}
+
+.main-container nav ul li:last-child:hover {
+    background-color: #FFF;
+}
+
+.main-container nav ul li .active {
+    color: var(--PinkColor);
+}
+
+.main-container nav ul li:last-child {
+    background-color: var(--lightGray);
+    padding: 3px 20px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    transition: 0.9s;
+}
+
+.main-container nav ul li:last-child img {
+    border-radius: 50%;
+    width: 75%;
+}
+
+.main-container .container {
+    background-color: var(--lightGray);
+    border-radius: 30px;
+    padding: 3vh 3%;
+    margin: 3vh 0 2vh 0;
+   
+}
+
+.main-container .fea-top {
+    display: flex;
+    width: 100%;
+    border-radius: 30px;
+    padding: 2vh 2%;
+    margin: 3vh 0 2vh 0;
+    background-color: var(--lightGray);
+    justify-content: space-between; 
+}
+
+
+.main-container .fea-top article,
+.main-container .fea-top aside {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkGray);
+    border-radius: 30px;
+    padding: 3vh 3%;
+}
+
+.main-container .fea-top article {
+    width: 70%;
+}
+
+.main-container .fea-top article header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+
+.main-container .fea-top article header .arrows {
+    color: var(--secondColor);
+    cursor: pointer;
+}
+
+.main-container h2 {
+    font-family: var(--mainFont);
+    font-weight: bolder;
+    color: var(--PinkColor);
+    font-size: 30px;
+}
+
+.main-container h2 span {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.main-container .fea-top article .holder {
+    display: flex;
+    justify-content: space-between;
+    color: #FFF;
+    font-family: var(--SecondFont);
+    font-size: 19px;
+}
+
+.main-container .fea-top article .holder .fgames {
+    margin: 0 2%;
+    text-align: center;
+}
+
+.main-container .fea-top article .holder .fgames .img img,
+.main-container .fea-top article .holder .fgames .img {
+    border-radius: 30px;
+}
+
+.main-container .fea-top article .holder .fgames .img img {
+    width: 100%;
+    height: 53vh;
+}
+
+.main-container .fea-top article .holder .fgames .img:hover {
+    opacity: 0.8;
+}
+
+.main-container .fea-top article .holder .fgames .img .btn {
+    padding: 10px 20px;
+    background-color: var(--PinkColor);
+    color: #FFF;
+    border-radius: 30px;
+    transform: translateY(-75px);
+    opacity: 0;
+}
+
+.main-container .fea-top article .holder .fgames .img:hover .btn {
+    transform: translateY(-70px);
+    opacity: 1;
+}
+
+.main-container .fea-top article .holder .fgames .f-games-data1,
+.main-container .fea-top article .holder .fgames .f-games-data2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1%;
+    margin-top: 1vh;
+}
+
+.main-container .fea-top article .holder .fgames .f-games-data1 .p1 {
+    font-family: var(--mainFont);
+}
+
+.main-container .fea-top article .holder .fgames .f-games-data1 i,
+.main-container .fea-top aside .game .game-info .stats .fa-star {
+    color: #FFFF00;
+}
+
+.main-container .fea-top article .holder .fgames .f-games-data2 .p2 {
+    color: var(--secondColor);
+}
+
+.main-container .fea-top article .holder .fgames .f-games-data2 i,
+.main-container .fea-top aside .game .game-info .stats .fa-download {
+    color: var(--PinkColor);
+}
+
+.main-container .fea-top aside {
+    width: 28%;
+    color: white;
+    padding: 3vh 3%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.main-container .container aside h2  {
+    margin-bottom: 1vh;
+}
+
+.main-container .container aside .game {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--lightGray);
+    padding-bottom: 5vh;
+    margin: 3vh 1%;
+}
+
+.main-container .container aside .game img {
+    border-radius: 30px;
+    margin-right: 4%;
+    height: 100%;
+}
+
+.main-container .container aside .game .game-info {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 2%
+}
+
+.main-container .container aside .game .game-info h3 {
+    font-family: var(--mainFont);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.main-container .container aside .game .game-info .p {
+    margin: 1vh 0;
+    color: var(--secondColor);
+    text-transform: capitalize;
+    font-family: var(--SecondFont);
+}
+
+.main-container .container aside .game .game-info .stats {
+    display: flex;
+}
+
+.main-container .container aside .game .game-info .stats p {
+    margin-right: 3%;
+    font-family: var(--SecondFont);
+}
+
+.main-container .container aside .game .download {
+    background-color: var(--lightGray);
+    color: var(--PinkColor);
+    font-size: 18px;
+    padding: 9px;
+    border-radius: 50%;
+}
+
+.main-container .container aside .game .download:hover {
+    background-color: #FFF;
+
+}
+
+.view-all {
+    color: var(--PinkColor);
+    display: block;
+    margin-top: 2Vh;
+}
+
+.main-container .container .stream {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container .container .stream .how-stream {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    margin: 4vh 0;
+    flex-wrap: wrap;
+}
+
+.main-container .container .stream .how-stream .stream {
+    border: 2px solid var(--secondColor);
+    margin: 1%;
+    border-radius: 30px;
+    padding: 2%;
+    width: 31%;
+}
+
+.main-container .container .stream .how-stream .stream img {
+    border-radius: 50%;
+}
+
+.main-container .container .stream .how-stream .stream h3 {
+    color: #FFF;
+    font-family: var(--mainFont);
+    font-weight: normal;
+    margin: 2vh 0;
+}
+
+.main-container .container .stream .how-stream .stream p {
+    color: var(--secondColor);
+    font-family: var(--SecondFont);
+    font-size: 20px
+}
+
+.main-container .container .stream .how-stream .stream p .upper {
+    text-transform: uppercase;
+}
+
+.main-container .container .stream .how-stream .stream p .cap {
+    text-transform: capitalize;
+}
+
+.main-container .container .stream .how-stream .stream p .important {
+    font-weight: bold;
+    color: #FFF;
+}
+
+.main-container .container .stream button {
+    font-size: 20px;
+    text-transform: capitalize;
+    background-color: var(--PinkColor);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #FFF;
+}
+
+.main-container .container .stream button:hover {
+    background-color: #FFF;
+    color: var(--PinkColor);
+}
+
+
+.main-container .container .popular {
+    background-color: var(--darkGray);
+    border-radius: 30px;
+    margin: 3vh 0;
+    padding: 3vh 3%;
+    text-align: center
+}
+
+.main-container .container .popular .main-pop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2vh 0;
+}
+
+.main-container .container .popular .main-pop .img {
+    position: relative;
+    display: inline-block;
+}
+
+.main-container .container .popular .main-pop .img button {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.main-container .container .popular .main-pop .img .btn-left {
+    right: 10px;
+    top: -25px;
+}
+
+.main-container .container .popular .main-pop .img .btn-right {
+    bottom: 10px;
+    left: 50%;    
+}
+
+.main-container .container .popular .main-pop .img .br1 {
+    transform: translateX(10%);
+}
+
+.main-container .container .popular .main-pop .img .br2 {
+    transform: translateX(-100%);
+}
+
+.main-container .container .popular .main-pop .img:hover button {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-container .container .popular .main-pop .img img {
+    border-radius: 30px;
+    width: 275px;
+    height: 275px;
+    transition: linear 0.4s;
+}
+
+.main-container .container .popular .main-pop .pop .img:hover {
+    opacity: 0.5;
+}
+
+.main-container .container .popular .main-pop .data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFF;
+    font-family: var(--SecondFont);
+    font-size: 17px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.main-container .container .popular .main-pop .data .avatar img {
+    border-radius: 50%;
+}
+
+.main-container .container .popular .main-pop .data .info {
+    margin: 0 4%;
+}
+
+.main-container .container .popular .main-pop .data .p {
+    color: var(--PinkColor);
+}
+
+
+.main-container .footer {
+    text-align: center;
+    font-family: var(--SecondFont);
+    font-size: 20px;
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.main-container .footer p a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: var(--mainFont);
+}
+
+.main-container .footer p a:hover {
+    color: var(--PinkColor);
+}
+
